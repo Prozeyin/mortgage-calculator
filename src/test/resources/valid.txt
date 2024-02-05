@@ -1,0 +1,8 @@
+Customer,Total loan,Interest,Years
+"Daniel,Hannes",98563,7.5,8
+Gamer,1337,1.3,1
+Waldo,1000000,5,10
+
+,,
+
+.

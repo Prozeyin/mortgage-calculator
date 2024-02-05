@@ -13,7 +13,7 @@ This Java application calculates monthly mortgage payments. It reads customer da
 2. **Run the Application**
    - Execute `java -cp target/classes com.moneybin.App` to start the application
 ## Running Tests
-    - Execute `mvn test` to run unit tests.
+- Execute `mvn test` to run unit tests.
 ## Notes
  - The application expects data in `prospects.txt` with the format: `CustomerName,TotalLoan,Interest,Year`.
  - Commas within names should be enclosed in quotes.
