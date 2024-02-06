@@ -30,6 +30,14 @@ public class MortgageFileProcessor {
             while ((line = reader.readLine()) != null) {
                 lineNumber++;
                 try {
+                    // Trim the line to remove leading and trailing whitespace
+                    line = line.trim();
+
+                    // Skip the line if it is empty or only contains whitespace characters
+                    if (line.isEmpty()) {
+                        continue;
+                    }
+
                     // Split the line into data fields. Fields with internal commas are handled by the regex.
                     String[] data = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
                     if (data.length < 4) {
