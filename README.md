@@ -8,12 +8,19 @@ This Java application calculates monthly mortgage payments. It reads customer da
  - Maven
 
 ## Setup and Execution
-1. **Compile the Projects**
-    - Run `mvn compile` in the project directory.
-2. **Run the Application**
-   - Execute `java -cp target/classes com.moneybin.App` to start the application
+1. **Compile the Project**
+   - Run `mvn clean package` in the project directory to compile the project and create a JAR file.
+
+2. **Build the Docker Image**
+   - Run `docker build -t mortgage-calculator .` to build a Docker image using the included Dockerfile.
+
+3. **Run the Application in Docker**
+   - Execute `docker run --rm mortgage-calculator` to run the application in a Docker container.
+
+
 ## Running Tests
 - Execute `mvn test` to run unit tests.
+
 ## Notes
  - The application expects data in `prospects.txt` with the format: `CustomerName,TotalLoan,Interest,Year`.
  - Commas within names should be enclosed in quotes.
